@@ -237,7 +237,7 @@ for i =0:0
     up = panoWidth - (theta/360.0)*panoWidth;
     vp = phi/180.0*panoHeight;
     
-    %get the image from camj
+    %get the panoramic image
     panoname = sprintf('F:/SLAM/dataset/HighFrameRate/Test2/Pano/%06d.png', i);
     Ip = imread(panoname);
     imshow(Ip)
