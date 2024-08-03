@@ -51,7 +51,7 @@ Tinterval=(timeL(Tindex)-timeC);
 for i =1:length(timeC)
     
     % load velodyne points from .bin file
-    filename = sprintf('../Sequence A/LidarData/%05d.bin', timeL(Tindex(i)));
+    filename = sprintf('../Sequence A/point_cloud_bin/%05d.bin', timeL(Tindex(i)));
     fid_velo = fopen(filename,'rb');
     [points,count]=fread(fid_velo,'float32');
     fclose(fid_velo);
