@@ -30,6 +30,7 @@ The calibration estimates the intrinsics of the ladybug camera, the boresight an
 
 ## Example
 Run "maverick_project_3D_pointcloud_to_images.m" after downloading the YUTO MMS dataset. 
+
 Output: the panoramic image mapped with lidar 3d point cloud, the colors represent the depth range.
 <center>
     <a href="https://github.com/yujiazhang777/MaverickProjectLidar2Image/tree/master/mapping_result.jpg">
