@@ -33,7 +33,7 @@ time_L = strrep(filename_L, '.bin', '');
 timeL = cellfun(@str2num,time_L)';
 
 % image sequence timestamp (extracted from groundtruth txt file)
-fid_gt = fopen('../Sequence D/GroundTruth_LBP_YU_campus_UTM_Zone_17N_r.txt');
+fid_gt = fopen('../Sequence A/GroundTruth_LBP_HQ_WGS_84_UTM___zone_17N_s.txt');
 fgetl(fid_gt);
 %File format: ImNum(1), Cam(2), CamImNm(3), Rotate(4), Error(5), GPSTime(6), Index(7), Filename(8), East(9), North(10), Height(11), Omega(12), Phi(13), Kappa(14), img_h(15), img_w(16)
 cell_data_raw = textscan(fid_gt, '%d %d %d %d %d %f %d %s %f %f %f %f %f %f %d %d');     
@@ -56,7 +56,7 @@ Tinterval=(timeL(Tindex)-timeC);
 for i =1:length(timeC)
     
     % load velodyne points from .bin file
-    filename = sprintf('../Sequence D/LidarData/%05d.bin', timeL(Tindex(i)));
+    filename = sprintf('../Sequence A/LidarData/%05d.bin', timeL(Tindex(i)));
     fid_velo = fopen(filename,'rb');
     [points,count]=fread(fid_velo,'float32');
     fclose(fid_velo);
@@ -89,7 +89,7 @@ for i =1:length(timeC)
     
     % read the panoramic image
     panonames = cell_data_raw{8};
-    panoname = sprintf('../Sequence D/PanoramicImages/%s', strrep(panonames{i,1},'.tif','.jpg'));
+    panoname = sprintf('../Sequence A/PanoramicImages/%s', strrep(panonames{i,1},'.tif','.jpg'));
     Ip = imread(panoname);
     imshow(Ip)
     hold on
