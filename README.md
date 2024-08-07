@@ -2,11 +2,14 @@
 **Author:** Yujia Zhang
 
 **Main page of our dataset:** [YUTO MMS](https://ausmlab.github.io/yutomms/)
+
 **Main page of our group:** [AUSM Lab](https://gunhosohn.me/)
 
-## Reference
+## **Paper**
 
-```
+[**Zhang Y, Ahmadi S, Kang J, Arjmandi Z, Sohn G. YUTO MMS: A comprehensive SLAM dataset for urban mobile mapping with tilted LiDAR and panoramic camera integration. The International Journal of Robotics Research. 2024;0(0). doi:10.1177/02783649241261079**](https://journals.sagepub.com/doi/10.1177/02783649241261079)  
+
+```markdown
 @article{doi:10.1177/02783649241261079,
 author = {Yiujia Zhang and SeyedMostafa Ahmadi and Jungwon Kang and Zahra Arjmandi and Gunho Sohn},
 title ={YUTO MMS: A comprehensive SLAM dataset for urban mobile mapping with tilted LiDAR and panoramic camera integration},
